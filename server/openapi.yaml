@@ -1,0 +1,88 @@
+openapi: 3.0.0
+info:
+  title: Dart Alfred Server API
+  description: Our 문제풀이 서버의 API 문서입니다.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000
+    description: Local development server
+
+paths:
+
+  /questions:
+    get:
+      summary: 전체 필기 문제 가져오기
+      responses:
+        '200':
+          description: 문제 리스트 반환
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WrittenQuestion'
+
+  /practical-questions:
+    get:
+      summary: 전체 실기 문제 가져오기
+      responses:
+        '200':
+          description: 실기 문제 리스트 반환
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PracticalQuestion'
+
+  /login:
+    post:
+      summary: 사용자 로그인
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserLogin'
+      responses:
+        '200':
+          description: 로그인 성공
+        '401':
+          description: 로그인 실패
+
+components:
+  schemas:
+    WrittenQuestion:
+      type: object
+      properties:
+        id:
+          type: integer
+        question:
+          type: string
+        options:
+          type: array
+          items:
+            type: string
+        answer:
+          type: integer
+        explanation:
+          type: string
+
+    PracticalQuestion:
+      type: object
+      properties:
+        id:
+          type: integer
+        question:
+          type: string
+        code:
+          type: string
+
+    UserLogin:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string

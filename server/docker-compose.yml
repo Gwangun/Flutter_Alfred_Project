@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  dart_server:
+    build: .
+    container_name: dart_server
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./lib:/app/lib
+      - ./bin:/app/bin           # DB 파일 포함
+      - ./data:/app/data         # users.json 포함
+    restart: unless-stopped
