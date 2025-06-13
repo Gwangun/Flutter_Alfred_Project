@@ -22,7 +22,9 @@
 실행 방법
 1. 서버 실행
 cd server
+
 dart lib/main.dart
-2. Flutter 앱 실행
+3. Flutter 앱 실행
 flutter pub get
+
 flutter run
