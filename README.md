@@ -4,31 +4,7 @@
 
 ![image](https://github.com/user-attachments/assets/104018d2-7de1-4369-bb8c-c65a40a1f699)
 
-프로젝트 구조
-Fullstack/lib/
-├── views/               # UI 화면 (View)
-│   ├── login_view.dart
-│   ├── signup_view.dart
-│   ├── written_practice_view.dart
-│   └── written_save_view.dart
-├── viewmodels/          # 상태 관리 및 로직 (ViewModel)
-├── services/            # API 요청, DB 작업 등 (Model 역할)
-├── models/              # 데이터 모델 정의
-├── widgets/             # 공통 위젯 컴포넌트
-└── main.dart
-
-Server/lib/
-├── routes/
-│   ├── auth_routes.dart              ← 로그인/회원가입 API (user_service 담당)
-│   ├── practical_routes.dart         ← 실기 문제 처리 API
-│   └── written_routes.dart           ← 필기 문제 처리 API
-├── services/
-│   ├── user_service.dart             ← 사용자 인증 처리 (users.json 기반)
-│   ├── practical_service.dart        ← 실기 문제 저장/조회
-│   └── written_service.dart          ← 필기 문제 저장/조회
-├── utils/
-│   └── db_helper.dart
-└── main.dart
+![image](https://github.com/user-attachments/assets/953e5cd3-c551-498b-a858-ba2b134643aa)
 
 핵심 기능
 *  로그인 / 회원가입 기능 
