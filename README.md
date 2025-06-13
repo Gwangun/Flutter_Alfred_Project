@@ -19,12 +19,4 @@
 * `/wrong-questions` → 오답 노트 문제 목록 / 추가 / 삭제
 * `/practical-questions` → 실기 문제 목록 제공
 
-실행 방법
-1. 서버 실행
-cd server
-
-dart lib/main.dart
-3. Flutter 앱 실행
-flutter pub get
-
-flutter run
+![image](https://github.com/user-attachments/assets/e0685bf9-05c1-4555-9425-36f6794ab14c)
