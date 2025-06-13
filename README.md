@@ -1,11 +1,8 @@
 개요
+
 이 프로젝트는 정보처리기사 실기 및 필기 문제를 Flutter 기반으로 연습할 수 있는 모바일 앱입니다. Flutter(MVVM 구조) + SQLite + Alfred 서버 구조로 구성되어 있으며, 사용자 경험 향상과 서버 통신 기능을 갖춘 학습 도우미 역할을 합니다.
 
-기술 스택
-프론트엔드: Flutter / Dart, MVVM 아키텍처
-백엔드: Alfred 서버 (Dart 기반), REST API
-데이터베이스: SQLite (문제 저장, 오답 저장 등)
-상태 관리: Provider
+![image](https://github.com/user-attachments/assets/104018d2-7de1-4369-bb8c-c65a40a1f699)
 
 프로젝트 구조
 Fullstack/lib/
